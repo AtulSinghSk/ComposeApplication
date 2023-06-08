@@ -244,7 +244,6 @@ fun MyContent(){
     Column(
         Modifier.fillMaxSize(), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
 
-        // Creating a button that changes
         // bottomSheetScaffoldState value upon click
         // when bottomSheetScaffoldState is collpased,
         // it expands and vice-versa
