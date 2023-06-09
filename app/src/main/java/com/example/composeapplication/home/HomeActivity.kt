@@ -60,6 +60,7 @@ import com.example.composeapplication.checkerTaskList.CheckerTaskList
 import com.example.composeapplication.home.ui.theme.ComposeApplicationTheme
 import com.example.composeapplication.tools.DialogBoxActivity
 import com.example.composeapplication.tools.DrawerMenuActivity
+import com.example.composeapplication.tools.FirebaseActivity
 import com.example.composeapplication.tools.TabLayoutActivity
 import com.example.composeapplication.tools.TabLayoutWithViewPagerActivity
 import com.example.composeapplication.tools.ViewPagerActivity
@@ -127,6 +128,9 @@ fun MyScreen() {
             DrawerItem(
                 icon = Icons.Filled.Edit,
                 title = "DialogBox"
+            ),DrawerItem(
+                icon = Icons.Filled.Edit,
+                title = "FireBase"
             )
         )
         val bottomNavItems = listOf("Home", "Create", "Settings")
@@ -220,6 +224,15 @@ fun MyScreen() {
                                             Intent(
                                                 context,
                                                 DialogBoxActivity::class.java
+                                            )
+                                        )
+
+                                    }
+                                    "FireBase" -> {
+                                        context.startActivity(
+                                            Intent(
+                                                context,
+                                                FirebaseActivity::class.java
                                             )
                                         )
 

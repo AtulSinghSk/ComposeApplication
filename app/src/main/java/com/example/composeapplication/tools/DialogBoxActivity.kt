@@ -53,6 +53,8 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import com.example.composeapplication.R
 import com.example.composeapplication.tools.ui.theme.ComposeApplicationTheme
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.launch
 
 class DialogBoxActivity : ComponentActivity() {
@@ -261,7 +263,6 @@ fun MyContent(){
         }
     }
 }
-
 
 @OptIn(ExperimentalMaterialApi::class)
 @Preview(showBackground = true)

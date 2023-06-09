@@ -22,5 +22,6 @@
     <string name="title_activity_view_pager">ViewPagerActivity</string>
     <string name="title_activity_tab_layout_with_view_pager">TabLayoutWithViewPagerActivity</string>
     <string name="title_activity_dialog_box">DialogBoxActivity</string>
+    <string name="title_activity_firebase">FirebaseActivity</string>
 
 </resources>
