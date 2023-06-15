@@ -224,13 +224,9 @@ fun RowColum(){
                         //your onclick code here
 
                         if( validation(context,mobileNumber,password)) {
-
-
-
                             Log.e("TAG", "lotgIn Success: ", )
                             context.startActivity(Intent(context, HomeActivity::class.java))
                         }
-
                     }, modifier = Modifier.fillMaxWidth(),
                     shape = CircleShape
                 ) {
@@ -300,7 +296,6 @@ fun CallLoginApi(
 
 @Composable
 fun CallTockenApi(context: Context) {
-
     var username= SharedPref.getInstance(context).getString(TOKEN_NAME)
     var password= SharedPref.getInstance(context).getString(TOKEN_PASSWORD)
     LaunchedEffect(Unit, block = {
@@ -325,8 +320,6 @@ fun CallTockenApi(context: Context) {
             //  callLogin()
         }
     }
-
-
 }
 
 @Preview(showBackground = true, device = "id:pixel_xl")

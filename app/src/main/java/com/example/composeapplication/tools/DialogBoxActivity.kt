@@ -65,8 +65,8 @@ class DialogBoxActivity : ComponentActivity() {
             ComposeApplicationTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                   // DeleteDialogBox()
-                    BottomSeet()
+                    DeleteDialogBox()
+                   // BottomSeet()
                 }
             }
         }
@@ -172,9 +172,9 @@ fun DeleteDialogBox(
         Text(text = "OPEN DIALOG")
     }
 
-    Button(onClick = {}, modifier = Modifier.wrapContentHeight()) {
+    /*Button(onClick = {}, modifier = Modifier.wrapContentHeight()) {
         Text(text = "Bottom Dilog")
-    }
+    }*/
 }
 
 @Composable
@@ -269,7 +269,7 @@ fun MyContent(){
 @Composable
 fun GreetingPreview3() {
     ComposeApplicationTheme {
-        //DeleteDialogBox()
-        BottomSeet()
+        DeleteDialogBox()
+       // BottomSeet()
     }
 }
